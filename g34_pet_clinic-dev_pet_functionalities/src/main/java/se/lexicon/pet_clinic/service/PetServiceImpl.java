@@ -1,6 +1,8 @@
 package se.lexicon.pet_clinic.service;
 
 
-public class PetServiceImpl {
+public class PetServiceImpl  implements PetService{
+
+
     // todo: implement PetService Interface
 }
