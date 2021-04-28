@@ -4,8 +4,9 @@ package se.lexicon.pet_clinic.repository;
 public interface PetRepository  extends CrudRepository <Pet,String>{
     Optional<Pet> findByNameIgnoreCase(String name);
     List<Pet> findAll();
-    List<Owner>findByFirstNameIgnoreCaseAndLastNameIgnoreCase(String firstName, String lastName);
-    List<Owner>findByTelephone(String telephone);
+    List<Pet>findByFirstNameIgnoreCaseAndLastNameIgnoreCase(String firstName, String lastName);
+    List<Pet>findByTelephone(String telephone);
+    List<Pet>findByPetTypeNameIgnoreCase(String petTypeName);
 
 
     // todo: implement basic CRUD
